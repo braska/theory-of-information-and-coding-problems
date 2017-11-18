@@ -1,10 +1,10 @@
 package tikshared
 
 import (
-	"os"
-	"fmt"
 	"encoding/gob"
 	"errors"
+	"fmt"
+	"os"
 )
 
 func Decode(inputf *os.File, outputf *os.File) {

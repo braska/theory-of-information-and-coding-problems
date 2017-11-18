@@ -1,9 +1,9 @@
 package tikshared
 
 import (
-	"os"
 	"bufio"
 	"encoding/gob"
+	"os"
 )
 
 func Encode(mode EncodingMode, inputf *os.File, outputf *os.File, codes Codes) (bytesBefore int64, bytesAfter int64) {
@@ -66,7 +66,6 @@ func Encode(mode EncodingMode, inputf *os.File, outputf *os.File, codes Codes) (
 	}
 
 	outputf.Sync()
-
 
 	inputfStat, istatErr := inputf.Stat()
 	ErrorCheck(istatErr)

@@ -3,12 +3,12 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/braska/theory-of-information-and-coding-problems/entropy"
+	"github.com/braska/theory-of-information-and-coding-problems/huffman"
+	"github.com/braska/theory-of-information-and-coding-problems/tikshared"
 	"github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
 	"os"
-	"github.com/braska/theory-of-information-and-coding-problems/tikshared"
-	"github.com/braska/theory-of-information-and-coding-problems/huffman"
-	"github.com/braska/theory-of-information-and-coding-problems/entropy"
 )
 
 func usage() {

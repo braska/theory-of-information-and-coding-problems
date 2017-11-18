@@ -1,8 +1,8 @@
 package tikshared
 
 import (
-	"os"
 	"bufio"
+	"os"
 )
 
 func FindMinKeyInMap(m map[string]int) (k string) {
@@ -22,7 +22,6 @@ func FindMinKeyInMap(m map[string]int) (k string) {
 	}
 	return
 }
-
 
 func ErrorCheck(e error) {
 	if e != nil {
