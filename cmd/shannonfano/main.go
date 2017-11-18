@@ -6,7 +6,7 @@ import (
 	"github.com/dustin/go-humanize"
 	"github.com/olekukonko/tablewriter"
 	"os"
-	"github.com/braska/theory-of-information-and-coding-problems/shennonfano"
+	"github.com/braska/theory-of-information-and-coding-problems/shannonfano"
 	"github.com/braska/theory-of-information-and-coding-problems/entropy"
 	"github.com/braska/theory-of-information-and-coding-problems/tikshared"
 )
@@ -41,7 +41,7 @@ func encode(mode tikshared.EncodingMode, inputf *os.File, outputf *os.File) {
 		symbolsForEncode = combinations
 	}
 
-	codes := shennonfano.BuildTable(mode, symbolsForEncode)
+	codes := shannonfano.BuildTable(mode, symbolsForEncode)
 
 	for r, code := range codes {
 		tableOfCodes.Append([]string{string(r), fmt.Sprint(code.AsString())})

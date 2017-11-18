@@ -1,4 +1,4 @@
-package shennonfano
+package shannonfano
 
 import (
 	"github.com/braska/theory-of-information-and-coding-problems/tikshared"
